@@ -1,0 +1,8 @@
+data/
+models/
+images/
+.idea/
+.lightning_studio/
+.viminfo
+.vscode/
+__pycache__/
