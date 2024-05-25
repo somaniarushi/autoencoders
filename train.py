@@ -17,7 +17,8 @@ class DatasetsAndLoaders(NamedTuple):
     test_loader: DataLoader
 
 def get_datasets_and_loaders():
-    transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
+    # Normalize the pixel values to be between 0 and 1
+    transform = transforms.Compose([transforms.ToTensor()])
 
     train_dataset = datasets.MNIST(root='./data', train=True, transform=transform, download=True)
     test_dataset = datasets.MNIST(root='./data', train=False, transform=transform, download=True)

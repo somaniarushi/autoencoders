@@ -40,7 +40,7 @@ trainer = Trainer(
     criterion, 
     datasets_and_loaders.train_loader, 
     datasets_and_loaders.test_loader,
-    'models/ae_model.pt',
-    'images/ae_output.png'
+    'models/ae_model_no_norm.pt',
+    'images/ae_output_no_norm.png'
 )
-trainer.train(1)
+trainer.train(5)

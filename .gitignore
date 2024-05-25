@@ -1,4 +1,5 @@
 data/
+datasets/
 models/
 images/
 .idea/
@@ -6,3 +7,5 @@ images/
 .viminfo
 .vscode/
 __pycache__/
+*.ipynb
+*.png
